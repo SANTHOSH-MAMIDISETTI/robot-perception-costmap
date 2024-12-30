@@ -1,0 +1,7 @@
+<launch>
+    <arg name="package_path" default="$(find cost-mapping)" />
+    <node pkg="cost-mapping" type="occupancy.py" name="occupancy_node" output="screen">
+        <rosparam command="load" file="$(arg package_path)/params.yaml"/>
+        <param name="cost_mapping/package_path" value="$(arg package_path)"/>
+    </node>
+</launch>

@@ -1,0 +1,6 @@
+point_cloud_path: "scans.pcd"
+elevation_thres_max: 10.0  # in meters
+elevation_thres_min: 0.0   # in meters
+nearest_neighbors: 30
+cost_thres: 0.5          # Normalized cost between 0-1
+occupancy_topic: "occupancy_grid"
